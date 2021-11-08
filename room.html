@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>お部屋 石井花壇 | 温海温泉旅館【ポートフォリオ】</title>
+    <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+
+    <!--レスポンシブデザイン時に必要 (Google推奨)
+    viewportとは表示領域-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="img/logo02.jpg">
+
+    <!-- flatpickrの読み込み -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!--Aos.jsを読み込ませてる-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--jQueryを読み込ませる-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--cssファイルはトップページのとは違うので注意-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/room.css">
+
+    <!--自分のJavaScriptファイル(jQuery)を読み込ませてる-->
+    <script src="js/room_cooking_onsen_main.js" defer></script>
+
+
+    
+
+  </head>
+
+
+
+  
+  
+  
+  
+
+<body>
+
+<!--固定ヘッダー-->
+
+  <header>
+  
+    
+
+  <div class="header_left_center_right">
+    <div class="header_left_center">
+     <div class="header_left">
+       <a href="index.html"><img src="img/sub-header-logo.png" alt="ロゴ"></a>
+     </div>
+
+     <nav class="headercenter">
+      <a class="header_center" href="room.html">お部屋</a>
+      <a class="header_center" href="cooking.html">お料理</a>
+      <a class="header_center" href="onsen.html">温泉</a>
+     </nav>
+    </div>
+
+
+    <!--予約モーダルフォーム-->
+     <div class="headerright">
+
+       <!--モーダルの開くボタン-->
+       <a class="header_right" href="#">
+       <img src="img/calender.png" alt="カレンダー">宿泊予約</a>
+       <!--モーダルの開くボタン終了-->
+
+     </div>
+
+
+        <!--スマートフォン 始まり-->
+        <div id="hamburger">
+          <p class="btn-gNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </p>
+          <nav id="gNav" class="">
+            <ul class="gNav-menu">
+              <li><a href="room.html">お部屋</a></li>
+              <li><a href="cooking.html">お料理</a></li>
+              <li><a href="onsen.html">温泉</a></li>
+              <li><a class="header_rightheader_right" href="#">宿泊予約</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--スマートフォン 終わり-->
+
+
+
+  </header>
+  <!--固定ヘッダー終わり-->
+
+
+  
+
+
+  
+<!--モーダルの中の要素始め-->
+<div class="modal">
+  <div class="box">
+
+    <!--モーダルの閉じるボタン-->
+    <div class="close"><img class="close" src="img/close.jpg" alt="閉じるボタン"></div>
+    <!--モーダルの閉じるボタン終了-->
+
+    <p class="modal_form">宿泊予約</p>
+    <!--フォームの中の要素始め-->
+    <div class="form-wrapper">
+
+        <!--名前-->
+        <div class="modal_form2">
+          <label for="name">お名前</label><br>
+          <input class="modal_form3" type="text" name="entry.396652230" id="name" placeholder="例：山田太郎" required>
+        </div>
+
+        <!--メールアドレス-->
+        <div class="modal_form2">
+          <label for="mail">メールアドレス</label><br>
+          <input class="modal_form3" type="mail" name="entry.1934980237" id="mail" placeholder="例：Example@example.com" required>
+        </div>
+
+        <!--ご希望プラン（空いているプランのみ表示されます）-->
+        <div class="modal_form2"> 
+          <p class="modal_form4">ご希望プラン（空いているプランのみ表示されます）</p>
+          <select class="modal_form3" name="pull-down">
+            <option value="サンプル1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+            <option value="サンプル2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+            <option value="サンプル3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+          </select>
+        </div>
+
+        <!--日時選択-->
+        <div class="modal_form2">
+          <p class="modal_form4">日時選択</p>
+          <form action="#" method="post">
+            <input class="flatpickr" type="text" placeholder="日時を選択してください" readonly="readonly">
+            
+          </form>
+        </div>
+
+        
+
+       
+    </div>
+       <!--送信ボタン-->
+       <p class="modal_form5">送信する</p>
+       <!--送信ボタン-->
+
+
+    <!--フォームの中の要素終わり-->
+
+  </div>
+</div>
+<!--モーダルの中の要素終了-->
+
+ </div>
+<!--予約モーダルフォーム終わり-->
+
+
+
+<!--ヘッダーメイン画像-->
+<div class="header_main_img">
+    <p class="header_main_img_p">お部屋</p>
+</div>
+
+
+<!--メイン-->
+<div class="main">
+    <!--メイン2-->
+    <div class="main2">
+      <!--パンくずリスト-->
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="index.html">
+              <span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+      
+        <li itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="room.html">
+              <span itemprop="name">お部屋</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+       <!--パンくずリスト終わり-->
+      <div class="main3">
+        <p>創業より受け継がれてきた石井花壇の和の造り<br>
+          温海の雄大な絶景を堪能していただけるように設計された客室<br>
+          ゆるやかに流れ行く時間に身を委ねて</p> 
+      </div>
+
+
+
+      <!--メインお部屋左側-->
+
+      <div data-aos="zoom-in-right">
+          
+      <div class="main_room"> <!--和の背景、文章-->
+        <p class="main_room3">温泉付き客室</p>
+        <p class="main_room4">温海の源泉かけ流し露天風呂付き客室になります。<br>
+           あなただけの上質な安らぎのひとときを。</p>
+        <p class="main_oheya4">＊部屋数に限りがございます。<br>
+           ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</p>
+          <div class="main_room2 firstroom_img"> <!--お部屋の画像-->
+          </div>
+      </div>
+
+      </div>
+      
+      <!--メインお部屋左側終わり-->
+
+
+
+      <!--メインお部屋右側-->
+
+      <div data-aos="zoom-in-left">
+          
+      <div class="mainright_room"> <!--和の背景、文章-->
+        <p class="mainright_room3">庭園付き客室</p>
+        <p class="mainright_room4">庭園付きの客室になります。<br>
+           お庭を見ながら、ほっとするひとときをお過ごしください。</p>
+        <p class="mainright_oheya4">＊お庭は複数のお客様と囲む形になります。<br>
+           ＊部屋数に限りがあります。<br>
+           ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。</p>
+          <div class="mainright_room2 rightroom_img"> <!--お部屋の画像-->
+          </div>
+      </div>
+
+      </div>
+      
+      <!--メインお部屋右側終わり-->
+
+
+      <!--メインお部屋左側-->
+
+      <div data-aos="zoom-in-right">
+          
+      <div class="main_room"> <!--和の背景、文章-->
+        <p class="main_room3">一般客室</p>
+        <p class="main_room4">最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>
+           内装となっており、とても過ごしやすくしていただけます。</p>
+        <p class="main_oheya4">＊全室お部屋より日本海を望むことができます。</p>
+          <div class="main_room2 lastroom_img"> <!--お部屋の画像-->
+          </div>
+      </div>
+
+      </div>
+      
+      <!--メインお部屋左側終わり-->
+
+
+    
+
+      
+
+
+    </div>
+    <!--メイン2終わり-->
+</div>
+<!--メイン終わり-->
+
+ 
+
+
+ 
+
+
+      <!--メインフッター-->
+
+
+      <div class="footer">
+       <div class="footer2">
+        <a class="footer3" href="room.html">お 部 屋</a>
+        <a class="footer3" href="cooking.html">お 料 理</a>
+        <a class="footer3" href="onsen.html">温 泉</a>
+       </div>
+       <div class="footer4">
+        <a href="index.html"><img class="footer5" src="img/footer-logo.jpg" alt="最後のロゴ"></a>
+        <p class="footer6"><span class="mar_20">〒000-0000</span>山形県鶴岡市xxxxxxxxxxx</p>
+        <p><span class="mar_20">TEL.000-0000-0000</span>FAX.00-0000-0000</p>
+       </div>
+      </div>
+
+
+
+    </main><!--main-->
+
+<!--フッター-->
+<footer id="footer">
+    <p>Copyright © 石井花壇 All Rights Reserved.</p>
+</footer>
+
+
+
+<!--jQueryを読み込ませる-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--自分のJavaScriptファイル(jQuery)を読み込ませてる-->
+<script src="js/room_cooking_onsen_main.js"></script>
+</body>
+
+
+</html>
+
