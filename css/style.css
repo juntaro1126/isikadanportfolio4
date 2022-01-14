@@ -1,18 +1,21 @@
 @charset "UTF-8";
+
 * {
-  box-sizing:border-box;
+box-sizing:border-box;
 }
 /*------------------------------------------------------------------------------
 共通部分
 ------------------------------------------------------------------------------*/
-html {
-  width: 100%;
-}
 body {
-  overflow-x: hidden;
-  font-family: “Times New Roman”, “游明朝”, “Yu Minho”, “游明朝体”, “YuMinho”, “ヒラギノ明朝 Pro W3”, “Hiragino Minho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;;
+overflow-x: hidden;
+font-family: “Times New Roman”,
+“游明朝”, “Yu Minho”, “游明朝体”, “YuMinho”, “ヒラギノ明朝 Pro W3”, 
+“Hiragino Minho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”,
+“MS PMincho”, serif “Noto Serif JP”;
 }
-
+.display_flex {
+display: flex;
+}
 
 
 /*------------------------------------------------------------------------------
@@ -34,7 +37,7 @@ https://web-camp.io/magazine/archives/27075
 
 header {
   display: none;                      /* ページ読み込み時は非表示にする */
- }
+}
 .header_left_center_right {           
   background:rgba(253, 253, 253, 0.6);
 
@@ -112,13 +115,13 @@ header {
 トップアニメーション
 
 トップアニメーション参考サイト
- https://hoshinoya.com/  
+https://hoshinoya.com/  
 
- 一番参考になった
- https://www.esz.co.jp/blog/185.html
+一番参考になった
+https://www.esz.co.jp/blog/185.html
 
- -webkit-とは？
- https://code-schools.com/css-webkit/
+-webkit-とは？
+https://code-schools.com/css-webkit/
 
 ------------------------------------------------------------------------------*/
 .main_imgBox {
@@ -317,6 +320,7 @@ https://tr.you84815.space/flatpickr/index.html
 article {
   background-image:url(../img/bg.jpg);
   height: 681px;
+  background-size: cover;
 }
 .vertical_vertical {
   text-align: right;
@@ -351,115 +355,79 @@ article {
   font-size: 28px;
 }
 
-
 /*------------------------------------------------------------------------------
-お部屋(oheya)についての紹介
+room お部屋 cooking お料理 spa 温泉
 ------------------------------------------------------------------------------*/
-.oheya {
-  margin-top: 106px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1400px;
+.home_content_room_cooking_spa_wrap {
+max-width: 1920px;
+margin: 106px auto 0;
 }
-.oheya2 {
-  max-width: 80%;
-  max-height: 545px;
+.home_content_room_cooking_spa {
+max-width: 1619px;
+margin: 0 auto 112px;
+justify-content: space-around;
 }
-
-.oheya4 {
-  font-size: 36px;
-  margin-bottom: 75px;
+.home_content_room_cooking_spa img {
+max-width: 900px;
+width: 100%;
+height: 545px;
 }
-.oheya5 {
-  font-size: 16px;
-  margin-bottom: 75px;
+.home_content_room_cooking_spa_text_top {
+margin-top: 2rem;
+font-weight: medium;
+font-size: 36px;
+line-height: 62px;
 }
-.oheya6 {
-  text-decoration: none;
-  font-size: 16px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  padding: 20px 44px;
-  color: #000000;
+.home_content_room_cooking_spa_text_center {
+margin-top: 75px;
+margin-bottom: 75px;
+font-weight: medium;
+font-size: 1rem;
+line-height: 2rem;
 }
-.oheya6:hover {
-  opacity: 0.4;
+.home_content_room_cooking_spa_text_bottom {
+border: 1px solid #707070;
+padding: 20px 44px;
 }
-
-
+.home_content_room_cooking_spa_text a {
+color: #000000;
+text-decoration: none;
+}
+.home_content_room_cooking_spa_text a:hover {
+opacity: 0.4;
+}
 /*------------------------------------------------------------------------------
-料理(ryouri)についての紹介
+SP (max-width: 1500px)
 ------------------------------------------------------------------------------*/
-.ryouri {
-  margin-top: 106px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
+@media screen and (max-width: 1500px) {
+.home_content_room_cooking_spa {
+flex-direction: column;
 }
-.ryouri2 {
-  max-width: 80%;
-  max-height: 545px;
+.home_content_cooking {
+flex-direction: column-reverse;
 }
-.ryouri3 {
-  margin-left: 200px;
+.home_content_room_cooking_spa img {
+margin: 0 auto;
+width: 80%;
+height: auto;
 }
-.ryouri4 {
-  font-size: 36px;
-  margin-bottom: 75px;
+.home_content_room_cooking_spa_text {
+text-align: center;
 }
-.ryouri5 {
-  font-size: 16px;
-  margin-bottom: 75px;
 }
-.ryouri6 {
-  text-decoration: none;
-  font-size: 16px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  padding: 20px 44px;
-  color: #000000;
-}
-.ryouri6:hover {
-  opacity: 0.4;
-}
-
-
 /*------------------------------------------------------------------------------
-温泉(onsen)についての紹介
+SP (min-width: 1700px)
 ------------------------------------------------------------------------------*/
-.onsen {
-  margin-top: 106px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1400px;
+@media screen and (min-width: 1700px) {
+.home_content_room_cooking_spa {
+justify-content: space-between;
 }
-.onsen2 {
-  max-width: 80%;
-  max-height: 545px;
+.home_content_room_cooking_spa img {
+max-width: 1050px;
+}
 }
 
-.onsen4 {
-  font-size: 36px;
-  margin-bottom: 75px;
-}
-.onsen5 {
-  font-size: 16px;
-  margin-bottom: 75px;
-}
-.onsen6 {
-  text-decoration: none;
-  font-size: 16px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  padding: 20px 44px;
-  color: #000000;
-}
-.onsen6:hover {
-  opacity: 0.4;
-}
+
 
 
 /*------------------------------------------------------------------------------
@@ -566,9 +534,7 @@ margin-bottom: 66px;
 }
 /*タブボタン クリックしたとき*/
 .tab_box .tab_btn.active {
-  
   text-decoration: underline;
- 
 }
 /*大きな箱*/
 .tab_box .panel_area {
@@ -659,6 +625,7 @@ margin-bottom: 66px;
 ------------------------------------------------------------------------------*/
 .footer {
   background-image: url(../img/bg3.jpg);
+  background-size: cover;
   height: 522px;
   width: 100%;
 }
@@ -710,47 +677,12 @@ margin-bottom: 66px;
   width: 100%;
   line-height: 60px;
 }
-/*------------------------------------------------------------------------------
-SP (min-width: 1220px)
-------------------------------------------------------------------------------*/
-@media screen and (min-width: 1220px) {
 
-}
 /*------------------------------------------------------------------------------
 SP (max-width: 1450px) 
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 1450px) {
-  
-/*------------------------------------------------------------------------------
-お部屋 料理 温泉 レスポンシブ (max-width: 1450px) 
-------------------------------------------------------------------------------*/
-  .oheya{
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-  }
-  .oheya2 {
-   margin-bottom: 40px;
-  }
-  .ryouri {
-   display: flex;
-   flex-direction: column-reverse;
-   text-align: center;
-  }
-  .ryouri2 {
-    margin-bottom: 40px;
-  }
-  .ryouri3 {
-    margin-left: 0;
-  }
-  .onsen {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .onsen2 {
-    margin-bottom: 40px;
-  }
+
 /*------------------------------------------------------------------------------
 おすすめご宿泊プラン レスポンシブ (max-width: 1450px) 
 ------------------------------------------------------------------------------*/
@@ -803,9 +735,6 @@ SP (max-width: 1450px)
 }
 
 }
-
-
-
 
 
 /*------------------------------------------------------------------------------
@@ -911,8 +840,6 @@ SP (max-width: 1024px) タブレット用
     padding-top: 5px;
   }
 }
-
-
 
 
 }

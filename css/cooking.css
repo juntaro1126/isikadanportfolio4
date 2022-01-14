@@ -1,16 +1,17 @@
 @charset "UTF-8";
+
 * {
-  box-sizing:border-box;
+box-sizing:border-box;
 }
 /*------------------------------------------------------------------------------
 共通部分
 ------------------------------------------------------------------------------*/
-html {
-  width: 100%;
-}
 body {
-  overflow-x: hidden;
-  font-family: “Times New Roman”, “游明朝”, “Yu Minho”, “游明朝体”, “YuMinho”, “ヒラギノ明朝 Pro W3”, “Hiragino Minho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;;
+overflow-x: hidden;
+font-family: “Times New Roman”,
+“游明朝”, “Yu Minho”, “游明朝体”, “YuMinho”, “ヒラギノ明朝 Pro W3”, 
+“Hiragino Minho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”,
+“MS PMincho”, serif “Noto Serif JP”;
 }
 
 
@@ -396,6 +397,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
 ------------------------------------------------------------------------------*/
 .footer {
   background-image: url(../img/bg3.jpg);
+  background-size: cover;
   height: 522px;
   width: 100%;
 }
