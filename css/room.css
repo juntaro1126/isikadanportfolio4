@@ -242,248 +242,231 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.breadcrumb li {
+  }
+  .breadcrumb li {
   display: inline;/*横に並ぶように*/
   list-style: none;
-  font-weight: bold;/*太字*/
-}
-
-.breadcrumb li:after {/* >を表示*/
+  font-weight: medium;
+  line-height: 32px;
+  }
+  .breadcrumb li::after {/* >を表示*/
   content: '>';
-  padding: 0 0.2em;
-  color: #555;
-}
-
-.breadcrumb li:last-child:after {
+  }
+  .breadcrumb li:last-child:after {
   content: '';
-}
-
-.breadcrumb li a {
+  }
+  .breadcrumb li a {
   text-decoration: none;
-  color: #000000;/*色*/
-}
-
-.breadcrumb li a:hover {
+  color: #000000;
+  }
+  .breadcrumb li a:hover {
   text-decoration: underline;
-}
-
-/*------------------------------------------------------------------------------
-メイン
-------------------------------------------------------------------------------*/
-.main {
-  padding: 0 3%;
-}
-.main2 {
-  width: 90%;
-  height: auto ;                           /*レスポンシブ対応が必要*/
-  margin: 0 auto 0;                        /*レスポンシブ対応が必要*/
-  padding-bottom: 150px;                   /*レスポンシブ対応が必要*/
-
-  /*background-color: black;*/
-}
-.main3 {
-  font-size: 16px;
+  }
+  
+  /*------------------------------------------------------------------------------
+  メイン
+  ------------------------------------------------------------------------------*/
+  .home_content_all_wrap {
+  padding: 0 4%;
+  }
+  .home_content_all {
+  max-width: 1174px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto ;    
+  }
+  .home_content_text {
   text-align: center;
-  font-family: YuMinho;
+  font-weight: medium;
+  font-size: 1rem;
+  line-height: 2rem;
   margin-top: 98px;
-  padding-bottom: 78px;
-
-  background-color: #FFFFFF;
-}
-
-/*------------------------------------------------------------------------------
-メインお部屋
-------------------------------------------------------------------------------*/
-.main_room {/*和の背景、文章*/
-  background-image: url(../img/bg.jpg);
-
-  width: 75%;/*813px*/
-  height: auto;/*381px*/
-
-  margin: 200px auto 0;/*お部屋の画像がかぶらないように*/
-  padding:0 3% 100px;/*和の背景が窮屈にならないように*/
-
+  margin-bottom: 135px;
+  }
+  
+  /*------------------------------------------------------------------------------
+  温泉付き客室 一般客室
+  ------------------------------------------------------------------------------*/
+  .home_content_room {
+  max-width: 1174px;
+  width: 100%;
+  margin: 0 auto 141px;
+  }
+  .home_content_room_text {
+  max-width: 813px;
+  width: 100%;
+  max-height: 381px;
+  height: 381px;
+  margin: 0 0 0 auto;
+  background-image: url(../img/bg.jpg);         /*和の背景*/
+  
   position: relative;
-  bottom: 0;
-  left: 150px;                   /*レスポンシブ対応が必要*/
-}
-.main_room p {
-  margin-left: 130px;            /*レスポンシブ対応が必要*/
-}
-.firstroom_img {/*お部屋の画像*/
+  }
+  .home_content_room_text img {
+  max-width: 525px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  
+  position: absolute;
+  top: -58px;
+  left: -361px;
+  }
+  .home_content_room_text_wrap {
+  padding-left: 244px;
+  }
+  .home_content_room_text_top {
+  padding-top: 60px;
+  font-weight: medium;
+  font-size: 24px;
+  line-height: 32px;
+  }
+  .home_content_room_text_center {
+  margin-top: 52px;
+  font-weight: medium;
+  font-size: 1rem;
+  line-height: 32px;
+  }
+  .home_content_room_text_bottom {
+  margin-top: 52px;
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 21px;
+  }
+  
+  /*------------------------------------------------------------------------------
+  園庭付き客室
+  ------------------------------------------------------------------------------*/
+  .home_content_room_text_alternative {
+  max-width: 813px;
+  width: 100%;
+  max-height: 381px;
+  height: 381px;
+  margin: 0 auto 0 0;
+  background-image: url(../img/bg.jpg);         /*和の背景*/
+  
+  position: relative;
+  }
+  .home_content_room_text_alternative img {
+  max-width: 525px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  
+  position: absolute;
+  top: -58px;
+  right: -361px;
+  }
+  .home_content_room_text_wrap_alternative {
+  padding-left: 60px;
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+  
+  .home_content_text {
+  margin-bottom: 30px;
+  }
+  .home_content_room {
+  margin-bottom: 20px;
+  }
+  .home_content_room_text {
   background-image: url(../img/oheya01.jpg);
-}
-.main_room2 {
-  background-size: contain;
-
-  width: 80%;                   /*レスポンシブ対応が必要*/
-  height: 300px;
-
+  background-position: center center;
+  max-width: 525px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  }
+  /*背景を暗くする*/
+  .home_content_room_text::before {
+  content: '';
+  background-color: rgba(0,0,0,.7);
   position: absolute;
-  top: -150px;                  /*レスポンシブ対応が必要*/
-  left: -300px;                 /*レスポンシブ対応が必要*/
-  
-}
-.main_room3 {
-  font-size: 20px;
-  padding-top: 60px;
-  padding-bottom: 52px;
-}
-.main_room4 {
-  font-size: 16px;
-  padding-bottom: 52px;
-}
-/*------------------------------------------------------------------------------
-メインお部屋 2番目のお部屋の画像 右側
-------------------------------------------------------------------------------*/
-.rightroom_img {
-  background-image: url(../img/oheya02.jpg);
-}
-
-.mainright_room {/*和の背景、文章*/
-  background-image: url(../img/bg.jpg);
-
-  width: 75%;/*813px*/
-  height: auto;/*381px*/
-
-  margin: 200px auto 0;/*お部屋の画像がかぶらないように*/
-  padding:0 3% 100px;/*和の背景が窮屈にならないように*/
-
-  position: relative;
+  top: 0;
+  right: 0;
   bottom: 0;
-  right: 150px;                   /*レスポンシブ対応が必要*/
-}
-.mainright_room p {
-  margin-left: 60px;            /*レスポンシブ対応が必要*/
-}
-.mainright_room2 {
-  background-size: contain;
-
-  width: 80%;                   /*レスポンシブ対応が必要*/
-  height: 300px;
-
+  left: 0;
+  }
+  /*文字をグローする*/
+  .home_content_room_text_top {
   position: absolute;
-  top: -150px;                  /*レスポンシブ対応が必要*/
-  right: -600px;                 /*レスポンシブ対応が必要*/
+  color:#FFFFFF;
+  text-shadow: 2px 2px 10px #CCCCCC ,
+  -2px 2px 10px #CCCCCC ,
+  2px -2px 10px #CCCCCC ,
+  -2px -2px 10px #CCCCCC;
+  }
+  .home_content_room_text_center {
+  position: absolute;
+  color:#FFFFFF;
+  top: 52px;
+  text-shadow: 2px 2px 10px #CCCCCC ,
+  -2px 2px 10px #CCCCCC ,
+  2px -2px 10px #CCCCCC ,
+  -2px -2px 10px #CCCCCC;
+  }
+  .home_content_room_text_bottom {
+  position: absolute;
+  color:#FFFFFF;
+  padding-top: 30px;
+  top: 152px;
+  text-shadow: 2px 2px 10px #CCCCCC ,
+  -2px 2px 10px #CCCCCC ,
+  2px -2px 10px #CCCCCC ,
+  -2px -2px 10px #CCCCCC;
+  }
+  .home_content_room_text img {
+  display: none;
+  position: static;
+  }
+  .home_content_room_text_wrap {
+  padding-left: 10px;/*画像と文字の位置を合わせる*/
+  }
+  .home_content_room_text_top {
+  padding-top: 40px;
+  }
   
-}
-.mainright_room3 {
-  font-size: 20px;
-  padding-top: 60px;
-  padding-bottom: 52px;
-}
-.mainright_room4 {
-  font-size: 16px;
-  padding-bottom: 52px;
-}
+  
+  
+  .home_content_room_text_alternative {
+  background-image: url(../img/oheya02.jpg);
+  background-position: center center;
+  max-width: 525px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  }
+  /*背景を暗くする*/
+  .home_content_room_text_alternative::before {
+  content: '';
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+  .home_content_room_text_alternative img {
+  display: none;
+  position: static;
+  }
+  .home_content_room_text_wrap_alternative {
+  padding-left: 10px;/*画像と文字の位置を合わせる*/
+  }
+  
+  
+  
+  .home_content_room_text_general {
+  background-image: url(../img/oheya01.jpg);
+  background-position: center center;
+  max-width: 525px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  }
+  
+  
+  
+  }
 
-
-
-@media screen and (max-width: 1200px) {
-
-.home_content_text {
-margin-bottom: 30px;
-}
-.home_content_room {
-margin-bottom: 20px;
-}
-.home_content_room_text {
-background-image: url(../img/oheya01.jpg);
-background-position: center center;
-max-width: 525px;
-margin: 0 auto;
-color: #FFFFFF;
-}
-/*背景を暗くする*/
-.home_content_room_text::before {
-content: '';
-background-color: rgba(0,0,0,.7);
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-}
-/*文字をグローする*/
-.home_content_room_text_top {
-position: absolute;
-color:#FFFFFF;
-text-shadow: 2px 2px 10px #CCCCCC ,
--2px 2px 10px #CCCCCC ,
-2px -2px 10px #CCCCCC ,
--2px -2px 10px #CCCCCC;
-}
-.home_content_room_text_center {
-position: absolute;
-color:#FFFFFF;
-top: 52px;
-text-shadow: 2px 2px 10px #CCCCCC ,
--2px 2px 10px #CCCCCC ,
-2px -2px 10px #CCCCCC ,
--2px -2px 10px #CCCCCC;
-}
-.home_content_room_text_bottom {
-position: absolute;
-color:#FFFFFF;
-padding-top: 30px;
-top: 152px;
-text-shadow: 2px 2px 10px #CCCCCC ,
--2px 2px 10px #CCCCCC ,
-2px -2px 10px #CCCCCC ,
--2px -2px 10px #CCCCCC;
-}
-.home_content_room_text img {
-display: none;
-position: static;
-}
-.home_content_room_text_wrap {
-padding-left: 10px;/*画像と文字の位置を合わせる*/
-}
-.home_content_room_text_top {
-padding-top: 40px;
-}
-
-
-
-.home_content_room_text_alternative {
-background-image: url(../img/oheya02.jpg);
-background-position: center center;
-max-width: 525px;
-margin: 0 auto;
-color: #FFFFFF;
-}
-/*背景を暗くする*/
-.home_content_room_text_alternative::before {
-content: '';
-background-color: rgba(0,0,0,.7);
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-}
-.home_content_room_text_alternative img {
-display: none;
-position: static;
-}
-.home_content_room_text_wrap_alternative {
-padding-left: 10px;/*画像と文字の位置を合わせる*/
-}
-
-
-
-.home_content_room_text_general {
-background-image: url(../img/oheya03.jpg);
-background-position: center center;
-max-width: 525px;
-margin: 0 auto;
-color: #FFFFFF;
-}
-
-
-}
 
 
 
@@ -549,12 +532,7 @@ color: #FFFFFF;
 SP (max-width: 1450px) 
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 1450px) {
-  
-  .mainright_room2 {
-  
-    right: -390px;                 /*レスポンシブ対応が必要*/
-    
-  }
+
 
 }
 
@@ -670,55 +648,6 @@ SP (max-width: 1024px) タブレット用
 
 
 
-
-/*------------------------------------------------------------------------------
-SP (max-width: 1024px) メインお部屋 左側
-------------------------------------------------------------------------------*/
-.main_room {/*和の背景、文章*/
-  margin: 300px auto 0;/*お部屋の画像がかぶらないように*/
-
-  left: 0;                      /*レスポンシブ対応が必要*/
-}
-.main_room p {
-  margin-left: 20px;            /*レスポンシブ対応が必要*/
-}
-
-.main_room2 {
-  width: 100%;                  /*レスポンシブ対応が必要*/
-
-  top: -240px;                  /*レスポンシブ対応が必要*/
-  left: 0;                      /*レスポンシブ対応が必要*/
-}
-
-/*------------------------------------------------------------------------------
-メインお部屋 2番目のお部屋の画像 右側
-------------------------------------------------------------------------------*/
-.mainright_room {/*和の背景、文章*/
-  margin: 300px auto 0;/*お部屋の画像がかぶらないように*/
-
-  right: 0;                   /*レスポンシブ対応が必要*/
-}
-.mainright_room p {
-  margin-left: 20px;            /*レスポンシブ対応が必要*/
-}
-.mainright_room2 {
-  width: 100%;                   /*レスポンシブ対応が必要*/
-
-  top: -240px;                  /*レスポンシブ対応が必要*/
-  right: 0;                 /*レスポンシブ対応が必要*/
-  
-}
-
-
-
-
-
-
-
-
-
-
-
 }
 /*------------------------------------------------------------------------------
 SP (max-width: 699px) スマートフォン用
@@ -729,23 +658,5 @@ SP (max-width: 699px) スマートフォン用
     display: none;
   }
 
-
-
-}
-
-/*------------------------------------------------------------------------------
-SP (max-width: 599px) スマートフォン用
-------------------------------------------------------------------------------*/
-@media screen and (max-width: 599px) {
-
-/*------------------------------------------------------------------------------
-SP (max-width: 599px) メインお部屋
-------------------------------------------------------------------------------*/
-.main_room2 {
-  top: -180px;                  /*レスポンシブ対応が必要*/
-}
-.mainright_room2 {
-  top: -180px;                  /*レスポンシブ対応が必要*/
-}
 
 }
