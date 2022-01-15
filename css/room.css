@@ -8,22 +8,14 @@ box-sizing:border-box;
 ------------------------------------------------------------------------------*/
 body {
 overflow-x: hidden;
-<<<<<<< Updated upstream
 font-family: “Times New Roman”,
 “游明朝”, “Yu Minho”, “游明朝体”, “YuMinho”, “ヒラギノ明朝 Pro W3”, 
 “Hiragino Minho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”,
 “MS PMincho”, serif “Noto Serif JP”;
-=======
-font-family: “Times New Roman”, “游明朝”,
-“Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”,
-“Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”,
-“MS PMincho”, Noto Serif JP;
->>>>>>> Stashed changes
-}
+}  
 .display_flex {
 display: flex;
-}  
-
+}
 
 /*------------------------------------------------------------------------------
 固定ヘッダー
@@ -221,27 +213,6 @@ https://tr.you84815.space/flatpickr/index.html
 /*------------------------------------------------------------------------------
 ヘッダーメイン画像
 ------------------------------------------------------------------------------*/
-<<<<<<< Updated upstream
-.header_main_img {/*親要素*/
-  display: table;                             /*テーブル要素に変更*/
-  height: 500px;
-  width: 100%;
-  background-image: url(../img/oheya-header.png);
-  /*background-size: contain;*/
-  background-size: cover;
-  background-position: center center;    /*画像の中心が常に画面の中心に来る*/
-  background-repeat: no-repeat;   
-}
-.header_main_img_p {/*子要素*/
-  display: table-cell;                         /*テーブルセル要素に変更*/
-  vertical-align: middle;                      /*上下中央*/
-  font-weight: 800;
-  font-size: 34px;
-  font-family: YuMinho;
-  color: #FFFFFF;
-  text-align: center;
-  
-=======
 .home_content_first_impression {/*親要素*/
 display: table;                             /*テーブル要素に変更*/
 height: 500px;
@@ -260,7 +231,6 @@ font-weight: 800;
 font-size: 34px;
 color: #FFFFFF;
 text-align: center;
->>>>>>> Stashed changes
 }
 /*------------------------------------------------------------------------------
 パンくずリスト
@@ -410,16 +380,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
 }
 
 
-<<<<<<< Updated upstream
 
-
-
-/*------------------------------------------------------------------------------
-メインお部屋 最後お部屋の画像
-------------------------------------------------------------------------------*/
-.lastroom_img {
-  background-image: url(../img/oheya03.jpg);
-=======
 @media screen and (max-width: 1200px) {
 
 .home_content_text {
@@ -522,8 +483,6 @@ color: #FFFFFF;
 }
 
 
-
->>>>>>> Stashed changes
 }
 
 
