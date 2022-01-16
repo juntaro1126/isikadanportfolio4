@@ -472,71 +472,78 @@ https://saruwakakun.com/html-css/basic/breadcrumb
 .footer {
   background-image: url(../img/bg3.jpg);
   background-size: cover;
-  height: 522px;
+  height: auto;
+  }
+  .footer_all {
+  max-width: 1920px;
   width: 100%;
-}
-.footer2 {
+  margin: 0 auto;
+  }
+  .footer_title_list {
   padding-top: 64px;
   display: flex;
-  justify-content: space-around;
   flex-direction: row-reverse;
+  justify-content: space-between;
+  font-weight: medium;
   font-size: 18px;
-  max-width: 140px;
+  max-width: 122px;
   margin: 0 auto 96px;
-}
-.footer3 {
+  }
+  .footer_title_link {
   text-decoration: none;
   color: #000000;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
+  letter-spacing: 0.5em;
   writing-mode: vertical-rl;
-}
-.footer3:hover {
+  -webkit-writing-mode: vertical-rl;
+  }
+  .footer_title_link:hover {
   opacity: 0.6;
-}
-.footer4 {
+  }
+  .footer_all_number {
   text-align: center;
+  font-weight: medium;
   font-size: 16px;
-}
-.footer5 {
+  }
+  .footer_img {
   margin-bottom: 72px;
-}
-.footer5:hover {
+  }
+  .footer_img:hover {
   opacity: 0.6;
-}
-.footer6 {
-  margin-bottom: 23px;
-}
-.mar_20 {
-  margin-right: 20px;
-}
-
-
-/*------------------------------------------------------------------------------
-フッター
-------------------------------------------------------------------------------*/
-#footer {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 12px;
+  }
+  .footer_wrap_post_code_prefectures {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  margin: 0 auto;
+  font-weight: medium;
+  font-size: 16px;
+  padding-bottom: 23px;
+  }
+  .footer_prefectures {
+  letter-spacing: 2.88px;
+  }
+  .footer_wrap_phone_number {
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+  margin: 0 auto;
+  font-weight: medium;
+  font-size: 16px;
+  padding-bottom: 61px;
+  }
+  
+  
+  /*------------------------------------------------------------------------------
+  フッター
+  ------------------------------------------------------------------------------*/
+  #footer {
   background-color: #000000;
-  width: 100%;
+  font-weight: medium;
+  font-size: 12px;
   line-height: 60px;
-}
-
-/*------------------------------------------------------------------------------
-SP (max-width: 1450px) 
-------------------------------------------------------------------------------*/
-@media screen and (max-width: 1450px) {
-
-
-}
-
-
-
-
-
-
+  color: #FFFFFF;
+  text-align: center;
+  }
 
 /*------------------------------------------------------------------------------
 SP (max-width: 1024px) タブレット用
@@ -653,6 +660,8 @@ SP (max-width: 699px) スマートフォン用
   .headercenter {
     display: none;
   }
-
+.footer_wrap_post_code_prefectures {
+flex-direction: column;
+}
 
 }
