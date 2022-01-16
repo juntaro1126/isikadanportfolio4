@@ -375,6 +375,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   .home_content_room_text {
   background-image: url(../img/menu01.jpg);
   background-position: center center;
+  background-size: cover;
   max-width: 525px;
   margin: 0 auto;
   color: #FFFFFF;
@@ -433,6 +434,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   .home_content_room_text_alternative {
   background-image: url(../img/menu02.jpg);
   background-position: center center;
+  background-size: cover;
   max-width: 525px;
   margin: 0 auto;
   color: #FFFFFF;
@@ -460,6 +462,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   .home_content_room_text_general {
   background-image: url(../img/menu03.jpg);
   background-position: center center;
+  background-size: cover;
   max-width: 525px;
   margin: 0 auto;
   color: #FFFFFF;

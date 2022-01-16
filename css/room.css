@@ -307,6 +307,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   width: 100%;
   max-height: 300px;
   height: 100%;
+  object-fit: cover;
   
   position: absolute;
   top: -58px;
@@ -352,6 +353,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   width: 100%;
   max-height: 300px;
   height: 100%;
+  object-fit: cover;
   
   position: absolute;
   top: -58px;
@@ -373,6 +375,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   .home_content_room_text {
   background-image: url(../img/oheya01.jpg);
   background-position: center center;
+  background-size: cover;
   max-width: 525px;
   margin: 0 auto;
   color: #FFFFFF;
@@ -431,6 +434,7 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   .home_content_room_text_alternative {
   background-image: url(../img/oheya02.jpg);
   background-position: center center;
+  background-size: cover;
   max-width: 525px;
   margin: 0 auto;
   color: #FFFFFF;
@@ -456,8 +460,9 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   
   
   .home_content_room_text_general {
-  background-image: url(../img/oheya01.jpg);
+  background-image: url(../img/oheya03.jpg);
   background-position: center center;
+  background-size: cover;
   max-width: 525px;
   margin: 0 auto;
   color: #FFFFFF;
@@ -466,9 +471,6 @@ https://saruwakakun.com/html-css/basic/breadcrumb
   
   
   }
-
-
-
 
 /*------------------------------------------------------------------------------
 メインフッター
