@@ -17,7 +17,6 @@ font-family: “Times New Roman”,
 display: flex;
 }
 
-
 /*------------------------------------------------------------------------------
 固定ヘッダー
 
@@ -203,7 +202,7 @@ position: relative;
       25% {
           opacity: 0;                                 /*画像が見ない*/
           transform: scale(1.2) ;                     /*1.2倍にする*/
-           z-index:9;
+          z-index:9;
       }
       100% { opacity: 0 }                             /*アニメーションの終了*/
   }
@@ -318,41 +317,100 @@ https://tr.you84815.space/flatpickr/index.html
 縦文字
 ------------------------------------------------------------------------------*/
 article {
-  background-image:url(../img/bg.jpg);
-  height: 681px;
-  background-size: cover;
+background-image:url(../img/bg.jpg);
+max-height: 681px;
+height: 100%;
+background-size: cover;
 }
-.vertical_vertical {
-  text-align: right;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  max-width: 859px;
-  margin: 0 auto;
-  padding: 0 4% ;
+.home_content_vertical_all {
+max-width: 1180px;
+width: 100%;
+margin: 0 auto;
+padding: 0 4%;
 }
-.vertical {
-  -webkit-writing-mode: vertical-rl;              /*Google Chrome、Safari向け*/
-  -ms-writing-mode: tb-rl;                        /*IE(Microsoft)向け*/
-  writing-mode: vertical-rl;
-  text-align: left;
-	display: inline-block;
-  margin-left: 5vw;
-  margin-top: 64px;
+.home_content_vertical_all_wrap {
+max-width: 860px;
+width: 100%;
+margin: 0 auto 0 0;
+padding-top: 64px;
+padding-bottom: 120px;
+font-weight: medium;
+writing-mode: vertical-rl;
+-webkit-writing-mode: vertical-rl;       /*Google Chrome、Safari向け*/
 }
-.vertical2 {
- font-size: 16px;
- margin-top: 85px;
+/*タイトル*/
+.home_content_vertical_title p {
+font-size: 28px;
+line-height: 42px;
+letter-spacing: 0.1em;
 }
-.vertical2 span {
-  text-combine-upright: all;
+.home_content_vertical_sub_title {
+padding-top: 85px;
 }
-.vertical3 {
-  margin-top: 380px;
-  font-size: 22px;
+/*内容*/
+.home_content_vertical_content {
+padding-top: 85px;
 }
-.vertical4 {
-  font-size: 28px;
+.home_content_vertical_content p {
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.1em;
+}
+.home_content_vertical_content span {
+text-combine-upright: all;
+}
+/*最後の名前*/
+.home_content_vertical_name {
+padding-top: 379px;
+}
+.home_content_vertical_name p {
+font-size: 22px;
+line-height: 32px;
+letter-spacing: 0.1em;
+}
+/*SP (max-width: 1024px) タブレット用*/
+@media screen and (max-width: 1024px) {
+
+  .home_content_vertical_all_wrap {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    }
+}
+/*SP (max-width: 690px)*/
+@media screen and (max-width: 690px) {
+
+  article {
+    max-height: 750px;
+    height: auto;
+    padding: 4% 0;
+    }
+    .home_content_vertical_all_wrap {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+    }
+    /*タイトル*/
+    .home_content_vertical_sub_title {
+    padding-top: 0;
+    max-width: 455px;
+    width: 100%;
+    margin: 0 auto;
+    }
+    /*内容*/
+    .home_content_vertical_content {
+    padding-top: 0;
+    max-width: 455px;
+    width: 100%;
+    margin: 0 auto;
+    }
+    /*最後の名前*/
+    .home_content_vertical_name {
+    padding-top: 0;
+    text-align: right;
+    }
 }
 
 /*------------------------------------------------------------------------------
@@ -396,9 +454,7 @@ text-decoration: none;
 .home_content_room_cooking_spa_text a:hover {
 opacity: 0.4;
 }
-/*------------------------------------------------------------------------------
-SP (max-width: 1500px)
-------------------------------------------------------------------------------*/
+/*SP (max-width: 1500px)*/
 @media screen and (max-width: 1500px) {
 .home_content_room_cooking_spa {
 flex-direction: column;
@@ -415,9 +471,8 @@ height: auto;
 text-align: center;
 }
 }
-/*------------------------------------------------------------------------------
-SP (min-width: 1700px)
-------------------------------------------------------------------------------*/
+
+/*SP (min-width: 1700px)*/
 @media screen and (min-width: 1700px) {
 .home_content_room_cooking_spa {
 justify-content: space-between;
@@ -426,9 +481,6 @@ justify-content: space-between;
 max-width: 1050px;
 }
 }
-
-
-
 
 /*------------------------------------------------------------------------------
 おすすめご宿泊プラン
@@ -741,6 +793,8 @@ SP (max-width: 1450px)
 SP (max-width: 1024px) タブレット用
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
+
+
 
 .header_right {
   display: none;
