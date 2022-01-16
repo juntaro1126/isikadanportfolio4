@@ -19,36 +19,28 @@ display: flex;
 
 /*------------------------------------------------------------------------------
 固定ヘッダー
-
-ヘッダー参考サイト       
-https://www.kibunesou.com/
-https://qiita.com/7note/items/1f63d873fcd610fba956
-
-cssで透明度を指定する方法
-https://web-camp.io/magazine/archives/27075
-
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 99;
 ------------------------------------------------------------------------------*/
-
 header {
-  display: none;                      /* ページ読み込み時は非表示にする */
+display: none;/*ページ読み込み時は非表示にする*/
 }
-.header_left_center_right {           
-  background:rgba(253, 253, 253, 0.6);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 1%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 80;
+.header_all {
+background:rgba(253, 253, 253, 0.6);
+max-width: 2500px;
+width: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 99;
+height: 80px;
+}
+.header_all_wrap {
+max-width: 1920px;
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
 }
 .header_left_center {
   display: flex;
@@ -72,7 +64,7 @@ header {
 .header_center:hover {
   opacity: 0.8;
 }
-.headerright {
+.header_reserve_Modal_form {
   background: #978F10 0% 0% no-repeat padding-box;
   width: 170px;
   text-align: center;
@@ -80,10 +72,9 @@ header {
 
   font-size: 16px;
   font-weight: 800;
-  opacity: 1;
 }
-.headerright:hover {
-  opacity: 0.4;
+.header_reserve_Modal_form:hover {
+opacity: 0.4;
 }
 /*モーダルの開くボタン */
 .header_right {
@@ -793,8 +784,6 @@ SP (max-width: 1450px)
 SP (max-width: 1024px) タブレット用
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
-
-
 
 .header_right {
   display: none;

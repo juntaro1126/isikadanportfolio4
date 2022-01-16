@@ -26,28 +26,23 @@ https://qiita.com/7note/items/1f63d873fcd610fba956
 
 cssで透明度を指定する方法
 https://web-camp.io/magazine/archives/27075
-
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 99;
 ------------------------------------------------------------------------------*/
-
 header {
-  height: 80px;
- }
-.header_left_center_right {           
-  background:rgba(253, 253, 253, 0.6);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 1%;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  z-index: 80;
+height: 80px;
+}
+.header_all {
+background:rgba(253, 253, 253, 0.6);
+max-width: 2500px;
+width: 100%;
+}
+.header_all_wrap {
+max-width: 1920px;
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
 }
 .header_left_center {
   display: flex;
@@ -71,7 +66,7 @@ header {
 .header_center:hover {
   opacity: 0.8;
 }
-.headerright {
+.header_reserve_Modal_form {
   background: #978F10 0% 0% no-repeat padding-box;
   width: 170px;
   text-align: center;
@@ -79,9 +74,8 @@ header {
 
   font-size: 16px;
   font-weight: 800;
-  opacity: 1;
 }
-.headerright:hover {
+.header_reserve_Modal_form:hover {
   opacity: 0.4;
 }
 /*モーダルの開くボタン */
