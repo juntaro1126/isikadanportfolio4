@@ -910,7 +910,9 @@ SP (max-width: 1024px) タブレット用
 SP (max-width: px) スマートフォン用
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 599px) {
-
+.sp_599px_none {
+display: none;
+}
   .headercenter {
     display: none;
   }
