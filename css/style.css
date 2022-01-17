@@ -916,9 +916,14 @@ display: none;
   .headercenter {
     display: none;
   }
+.home_content_room_cooking_spa {
+padding: 0 2%;
+}
+.home_content_room_cooking_spa_text_top {
+font-size: 26px;
+}
+/*フッター*/
 .footer_wrap_post_code_prefectures {
 flex-direction: column;
 }
-
-
 }
