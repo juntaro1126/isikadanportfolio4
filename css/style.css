@@ -626,6 +626,10 @@ h2.home_content_notification_title {
 @media screen and (max-width: 599px) {
       .home_content_notification_content_single_text {
       font-size: 12px;
+      line-height: 20px;
+      }
+      .home_content_notification_calendar {
+      margin-bottom: 10px;
       }
 }
 /*------------------------------------------------------------------------------
