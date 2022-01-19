@@ -48,25 +48,22 @@ $(function(){
 	  flatpickr('.flatpickr', config);
       //カレンダー設定終わり
 
-	  
-	  
-	  
 
 
 
-	  
+	
 	  //フォーム送信ボタン
 	  //今後追加予定
-	  
+	
 
-	 
-	   //お知らせタブ
-       $('.tab_box .tab_btn').click(function() {
-	     var index = $('.tab_box .tab_btn').index(this);
-	     $('.tab_box .tab_btn, .tab_box .tab_panel').removeClass('active');
-	     $(this).addClass('active');
-	     $('.tab_box .tab_panel').eq(index).addClass('active');
-       });
+	
+	//お知らせタブ
+    $('.tab_box .tab_btn').click(function() {
+	var index = $('.tab_box .tab_btn').index(this);
+	$('.tab_box .tab_btn, .tab_box .tab_panel').removeClass('active');
+	$(this).addClass('active');
+	$('.tab_box .tab_panel').eq(index).addClass('active');
+    });
 
 
 
