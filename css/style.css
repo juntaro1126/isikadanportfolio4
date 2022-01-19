@@ -469,6 +469,7 @@ opacity: 0.4;
   .home_content_room_cooking_spa {
   background-image:url(../img/oheya-top.jpg);
   background-size: cover;
+  background-position: center center;
   height: 545px;
   }
   /*お料理*/
