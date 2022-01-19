@@ -445,6 +445,51 @@ text-decoration: none;
 .home_content_room_cooking_spa_text a:hover {
 opacity: 0.4;
 }
+@media screen and (max-width: 599px) {
+  .home_content_room_cooking_spa img {
+  display: none;
+  }
+  /*お部屋*/
+  .home_content_room_cooking_spa {
+  background-image:url(../img/oheya-top.jpg);
+  background-size: cover;
+  height: 545px;
+  }
+  /*お料理*/
+  .home_content_cooking {
+  background-image:url(../img/menu-top.jpg);
+  background-size: cover;
+  height: 545px;
+  }
+  /*温泉*/
+  .home_content_spa {
+    background-image:url(../img/onsen-top.jpg);
+    background-size: cover;
+    height: 545px;
+  }
+  .home_content_room_cooking_spa_text_top {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 62px;
+    color: #FFFFFF;
+    }
+    .home_content_room_cooking_spa_text_center {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    }
+    .home_content_room_cooking_spa_text_bottom {
+    border: 1px solid #FFFFFF;
+    padding: 20px 44px;
+    }
+    .home_content_room_cooking_spa_text a {
+    color: #FFFFFF;
+    }
+}
 /*SP (max-width: 1500px)*/
 @media screen and (max-width: 1500px) {
 .home_content_room_cooking_spa {
@@ -462,8 +507,7 @@ height: auto;
 text-align: center;
 }
 }
-
-/*SP (min-width: 1700px)*/
+/*(min-width: 1700px)*/
 @media screen and (min-width: 1700px) {
 .home_content_room_cooking_spa {
 justify-content: space-between;
