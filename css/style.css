@@ -445,7 +445,23 @@ text-decoration: none;
 .home_content_room_cooking_spa_text a:hover {
 opacity: 0.4;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1500px) {
+  .home_content_room_cooking_spa {
+  flex-direction: column;
+  }
+  .home_content_cooking {
+  flex-direction: column-reverse;
+  }
+  .home_content_room_cooking_spa img {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  }
+  .home_content_room_cooking_spa_text {
+  text-align: center;
+  }
+  }
+@media screen and (max-width: 1024px) {
   .home_content_room_cooking_spa img {
   display: none;
   }
@@ -467,15 +483,19 @@ opacity: 0.4;
     background-size: cover;
     height: 545px;
   }
+  .home_content_room_cooking_spa {
+  padding: 0 2%;
+  }
+  .home_content_room_cooking_spa_text {
+  text-align: left;
+  }
   .home_content_room_cooking_spa_text_top {
-    text-align: left;
     margin-top: 10px;
-    font-size: 36px;
+    font-size: 26px;
     line-height: 62px;
     color: #FFFFFF;
     }
     .home_content_room_cooking_spa_text_center {
-    text-align: left;
     margin-top: 10px;
     margin-bottom: 50px;
     font-size: 1rem;
@@ -490,23 +510,7 @@ opacity: 0.4;
     color: #FFFFFF;
     }
 }
-/*SP (max-width: 1500px)*/
-@media screen and (max-width: 1500px) {
-.home_content_room_cooking_spa {
-flex-direction: column;
-}
-.home_content_cooking {
-flex-direction: column-reverse;
-}
-.home_content_room_cooking_spa img {
-margin: 0 auto;
-width: 80%;
-height: auto;
-}
-.home_content_room_cooking_spa_text {
-text-align: center;
-}
-}
+
 /*(min-width: 1700px)*/
 @media screen and (min-width: 1700px) {
 .home_content_room_cooking_spa {
@@ -959,12 +963,6 @@ display: none;
   .headercenter {
     display: none;
   }
-.home_content_room_cooking_spa {
-padding: 0 2%;
-}
-.home_content_room_cooking_spa_text_top {
-font-size: 26px;
-}
 /*フッター*/
 .footer_wrap_post_code_prefectures {
 flex-direction: column;
